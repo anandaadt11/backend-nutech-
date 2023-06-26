@@ -1,0 +1,31 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJOYW1lIjoiVGVzdCBOYW1lIiwidXNlckVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2ODc3ODExNTEsImV4cCI6MTY4Nzc4MTE3MX0.xnLPi0_-YPcWMLjZvKcB0LWVD3iyqMmcsa6kiqLQGaA
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ananda",
+    "email": "ananda@gmail.com",
+    "password": "123"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+    {
+        "email": "test@gmail.com",
+        "password": "123"
+    }
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE http://localhost:5000/logout
+
+
+###
+Get http://localhost:5000/product
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjMsInVzZXJOYW1lIjoiVGVzdCBOYW1lIiwidXNlckVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE2ODc3ODExOTksImV4cCI6MTY4Nzc4MTIxOX0.0vQLY_Wy_6cvS17atecfEK5g2ohx9FY8upFGG5oQj0w
