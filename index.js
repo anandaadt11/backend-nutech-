@@ -25,11 +25,11 @@ app.use(
   })
 );
 
+app.use(router);
+app.use(ProductRoutes);
 app.use(express.json());
 app.use(fileUpload());
 app.use(cookieParser());
-app.use(router);
-app.use(ProductRoutes);
 app.use(express.static("public"));
 
 app.listen(5000, () => {
