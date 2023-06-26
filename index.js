@@ -1,6 +1,6 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-// import Users from "./models/UserModel.js";
+
 import db from "./config/Database.js";
 import router from "./routes/index.js";
 import dotenv from "dotenv";
@@ -14,7 +14,6 @@ dotenv.config();
 try {
   await db.authenticate();
   console.log("Database Connected");
-  //   await Users.sync();
 } catch (error) {
   console.log(error);
 }
