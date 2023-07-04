@@ -19,12 +19,7 @@ try {
 
 app.use(
   cors({
-    origin: [
-      "https://product-menegement.vercel.app",
-      "https://product-menegement.vercel.app/",
-      "http://127.0.0.1:5173",
-      "http://localhost:5173",
-    ],
+    origin: true,
     credentials: true,
   })
 );
