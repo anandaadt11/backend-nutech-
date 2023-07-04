@@ -11,16 +11,16 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:5000/login
+POST https://app-c8f8ca2d-2b0f-41c7-930c-039bcbaa2e4c.cleverapps.io/login
 Content-Type: application/json
 
     {
-        "email": "test@gmail.com",
+        "email": "admin@gmail.com",
         "password": "123"
     }
 
 ###
-GET http://localhost:5000/token
+GET https://app-c8f8ca2d-2b0f-41c7-930c-039bcbaa2e4c.cleverapps.io/token
 
 ###
 DELETE http://localhost:5000/logout
