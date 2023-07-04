@@ -24,7 +24,7 @@ app.use(
   cors({
     origin: [
       "https://product-menegement.vercel.app",
-      "https://product-menegement-90xa4jc01-anandaadt11.vercel.app",
+      "https://product-menegement-78nswtv3f-anandaadt11.vercel.app",
     ],
     credentials: true,
   })
