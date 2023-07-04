@@ -41,12 +41,7 @@ export const Login = async (req, res) => {
     );
 
     res.cookie("refreshToken", refreshToken, {
-      secure: true,
-      path: "/",
       httpOnly: true,
-      hostOnly: true,
-      sameSite: false,
-      domain: "https://product-menegement.vercel.app/",
       maxAge: 24 * 60 * 60 * 1000,
     });
     res.json({ accessToken });
