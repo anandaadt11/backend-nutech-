@@ -25,8 +25,6 @@ app.use(
     origin: [
       "https://product-menegement.vercel.app",
       "https://product-menegement-90xa4jc01-anandaadt11.vercel.app",
-      "http://localhost:5173",
-      "http://127.0.0.1:5173",
     ],
     credentials: true,
   })
