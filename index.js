@@ -1,6 +1,5 @@
 import express from "express";
 import cookieParser from "cookie-parser";
-
 import db from "./config/Database.js";
 import router from "./routes/index.js";
 import dotenv from "dotenv";
@@ -32,8 +31,8 @@ app.use(
 
 app.use(express.static("public"));
 app.use(express.json());
-app.use(fileUpload());
 app.use(cookieParser());
+app.use(fileUpload());
 app.use(router);
 app.use(ProductRoutes);
 
