@@ -15,7 +15,7 @@ POST https://app-c8f8ca2d-2b0f-41c7-930c-039bcbaa2e4c.cleverapps.io/login
 Content-Type: application/json
 
     {
-        "email": "admin@gmail.com",
+        "email": "ananda@gmail.com",
         "password": "123"
     }
 
