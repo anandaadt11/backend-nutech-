@@ -17,6 +17,9 @@ try {
   console.log(error);
 }
 
+app.use(express.static("public"));
+app.use(express.json());
+app.use(cookieParser());
 app.use(
   cors({
     origin: [
@@ -26,10 +29,6 @@ app.use(
     credentials: true,
   })
 );
-
-app.use(express.static("public"));
-app.use(express.json());
-app.use(cookieParser());
 app.use(fileUpload());
 app.use(router);
 app.use(ProductRoutes);
